@@ -98,20 +98,26 @@
 <body class="antialiased">
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/972503667899?text=היי+הדסה,+אני+פונה+בקשר+לקורס+בוטים." class="whatsapp-float" target="_blank" title="דברי איתי בוואטסאפ">
+    <a href="https://wa.me/972503667899?text=%D7%94%D7%99%D7%99%2C%20%D7%A4%D7%95%D7%A0%D7%94%20%D7%91%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%A7%D7%95%D7%A8%D7%A1%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%91%D7%95%D7%98%D7%99%D7%9D." class="whatsapp-float" target="_blank" title="דברי איתי בוואטסאפ">
         <svg viewBox="0 0 32 32" class="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.23-.137-.762-.222-.942l-.469-1.083c-.144-.333-.27-.333-.456-.333-.172 0-.35.007-.532.007-.645 0-1.246.365-1.51.844-.35.633-.508 1.445-.508 2.057 0 .9.31 1.765.688 2.39 1.482 2.458 3.407 4.488 6.012 5.604.63.27 1.297.516 1.9.516.417 0 .831-.198 1.1-.445.467-.433 1.062-1.1 1.062-2.03 0-.135-.045-.251-.213-.351l-1.14-.54c-.45-.213-.777-.134-1.072.197-.295.33-.43.513-.73.513z"/>
             <path d="M16 0C7.163 0 0 7.163 0 16c0 2.817.734 5.462 2.016 7.757L.057 32l8.489-2.227A15.901 15.901 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.427 0-4.706-.632-6.692-1.74l-.48-.267-4.986 1.31 1.332-4.848-.293-.466A13.255 13.255 0 0 1 2.667 16c0-7.355 5.978-13.333 13.333-13.333 7.355 0 13.333 5.978 13.333 13.333s-5.978 13.333-13.333 13.333z"/>
         </svg>
     </a>
 
-    <!-- Header -->
+    <!-- Header with Navigation -->
     <header class="fixed w-full top-0 z-50 bg-slate-900/60 backdrop-blur-lg border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+            <div class="flex items-center gap-8">
                 <div class="logo-box">
-<img src="logo.png" alt="לוגו AutonoMe" class="logo-placeholder">
+                    <img src="logo.png" alt="לוגו AutonoMe" class="logo-placeholder">
                 </div>
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#details" class="hover:text-white transition">איך זה עובד?</a>
+                    <a href="#about" class="hover:text-white transition">מי אני?</a>
+                    <a href="#faq" class="hover:text-white transition">שאלות ותשובות</a>
+                </nav>
             </div>
             <a href="https://pay.sumit.co.il/egfwym/o8od5a/o8od5b/payment/" target="_blank" class="bg-white text-slate-900 px-6 py-2 rounded-full font-bold hover:bg-purple-100 transition shadow-lg text-sm">אני רוצה בוט לעסק שלי</a>
         </div>
@@ -142,34 +148,54 @@
     <section id="details" class="py-24 bg-slate-900/40 border-y border-white/5 px-6">
         <div class="max-w-6xl mx-auto text-white">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">הגיע הזמן לעבור לניהול חכם</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-white">
-                <div class="glass-card p-10 text-white">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-10">
                     <div class="text-purple-400 text-5xl mb-6">💬</div>
-                    <h3 class="text-2xl font-bold mb-4">מענה שחוזר על עצמו</h3>
-                    <p class="text-slate-400 leading-relaxed text-lg">במקום להיות תקועה בנייד ולענות בפעם ה-100 על מחירים ושעות פעילות, תני לבוט לעשות את זה עבורך.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-white">מענה שחוזר על עצמו</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg text-white">במקום להיות תקועה בנייד ולענות בפעם ה-100 על מחירים ושעות פעילות, תני לבוט לעשות את זה עבורך.</p>
                 </div>
-                <div class="glass-card p-10 border-purple-500/20 shadow-purple-500/5 shadow-2xl text-white">
-                    <div class="text-blue-400 text-5xl mb-6">📉</div>
-                    <h3 class="text-2xl font-bold mb-4">פספוס לקוחות</h3>
-                    <p class="text-slate-400 leading-relaxed text-lg">לקוחה שפונה אלייך רוצה תשובה עכשיו. אם היא תמתין שעות למענה, היא כנראה כבר תמצא פתרון אחר.</p>
+                <div class="glass-card p-10 border-purple-500/20 shadow-purple-500/5 shadow-2xl">
+                    <div class="text-blue-400 text-5xl mb-6 text-white">📉</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">פספוס לקוחות</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg text-white">לקוחה שפונה אלייך רוצה תשובה עכשיו. אם היא תמתין שעות למענה, היא כנראה כבר תמצא פתרון אחר.</p>
                 </div>
                 <div class="glass-card p-10 text-white">
-                    <div class="text-purple-400 text-5xl mb-6">🚀</div>
+                    <div class="text-purple-400 text-5xl mb-6 text-white text-white">🚀</div>
                     <h3 class="text-2xl font-bold mb-4 text-white text-white">חוויית לקוח פרימיום</h3>
-                    <p class="text-slate-400 leading-relaxed text-lg">מענה אוטומטי מיידי משדר שליטה ומקצוענות. זה הופך את המותג שלך לכזה שמעניק שירות בסטנדרטים הגבוהים ביותר.</p>
+                    <p class="text-slate-400 leading-relaxed text-lg text-white text-white text-white">מענה אוטומטי מיידי משדר שליטה ומקצוענות. זה הופך את המותג שלך לכזה שמעניק שירות בסטנדרטים הגבוהים ביותר.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dates & Info Section -->
+    <section class="py-20 px-6 text-white">
+        <div class="max-w-4xl mx-auto glass-card p-12 text-center border-purple-500/30">
+            <h2 class="text-3xl font-bold mb-8 text-white">מתי ואיך נפגשים?</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-right space-y-4">
+                    <p class="text-2xl font-bold text-purple-300">ימי רביעי | 10:00-13:00</p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        הקורס מועבר בשידור חי בזום, 2 מפגשים ממוקדים של 3 שעות כל אחד.
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-white/10 text-right">
+                    <p class="font-bold text-white mb-2">צריכה מועד אחר?</p>
+                    <p class="text-slate-300 text-sm mb-4">במידה והמועד הנוכחי לא מתאים לך, דברי איתי ונבדוק יחד פתרונות נוספים.</p>
+                    <a href="https://wa.me/972503667899?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%9E%D7%95%D7%A2%D7%93%20%D7%A9%D7%9C%20%D7%99%D7%95%D7%9D%20%D7%A8%D7%91%D7%99%D7%A2%D7%99%20%D7%A4%D7%97%D7%95%D7%AA%20%D7%9E%D7%A1%D7%AA%D7%93%D7%A8%20%D7%9C%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%93%D7%91%D7%A8%20%D7%A2%D7%9C%20%D7%9E%D7%95%D7%A2%D7%93%20%D7%0D7%A7%D7%A8." class="text-blue-400 font-bold hover:underline" target="_blank">כתבו לי בוואטסאפ לתיאום מועד ←</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Product Hand Section 01-04 -->
-    <section class="py-24 px-6 bg-slate-900/20">
+    <section class="py-24 px-6 bg-slate-900/20 text-white">
         <div class="max-w-6xl mx-auto text-white">
             <h2 class="text-4xl md:text-5xl font-black text-center mb-20 leading-tight">לא רק ידע.<br><span class="text-purple-400">מוצר עובד ביד.</span></h2>
             <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
                 <div class="flex items-start gap-6 text-right">
                     <div class="order-2">
-                        <h4 class="text-2xl font-bold mb-2">תוך 6 שעות הבוט שלך באוויר</h4>
+                        <h4 class="text-2xl font-bold mb-2 text-white">תוך 6 שעות הבוט שלך באוויר</h4>
                         <p class="text-slate-400 leading-relaxed">אנחנו לא רק לומדות - אנחנו עושות. את בונה את הבוט יחד איתי שלב אחרי שלב.</p>
                     </div>
                     <div class="num-badge order-1">01</div>
@@ -177,21 +203,21 @@
                 <div class="flex items-start gap-6 text-right">
                     <div class="order-2">
                         <h4 class="text-2xl font-bold mb-2">עצמאות מלאה</h4>
-                        <p class="text-slate-400 leading-relaxed">את לא תלויה באף אחד. רוצה לשנות משפט? להוסיף כפתור? את יודעת בדיוק איך לעשות את זה לבד.</p>
+                        <p class="text-slate-400 leading-relaxed text-white">את לא תלויה באף אחד. רוצה לשנות משפט? להוסיף כפתור? את יודעת בדיוק איך לעשות את זה לבד.</p>
                     </div>
                     <div class="num-badge order-1">02</div>
                 </div>
                 <div class="flex items-start gap-6 text-right text-white">
-                    <div class="order-2 text-white">
+                    <div class="order-2">
                         <h4 class="text-2xl font-bold mb-2 text-white">חיסכון אדיר בזמן</h4>
-                        <p class="text-slate-400 leading-relaxed">הבוט מסנן עבורך את השאלות הגנריות ומשאיר לך זמן להתמקד בעבודה האמיתית ובמה שחשוב.</p>
+                        <p class="text-slate-400 leading-relaxed text-white">הבוט מסנן עבורך את השאלות הגנריות ומשאיר לך זמן להתמקד בעבודה האמיתית ובמה שחשוב.</p>
                     </div>
                     <div class="num-badge order-1">03</div>
                 </div>
                 <div class="flex items-start gap-6 text-right text-white">
                     <div class="order-2">
                         <h4 class="text-2xl font-bold mb-2">מענה 24/6</h4>
-                        <p class="text-slate-400 leading-relaxed">העסק שלך נותן שירות גם כשאת ישנה, בחופשה או פשוט לא ליד הטלפון.</p>
+                        <p class="text-slate-400 leading-relaxed text-white text-white">העסק שלך נותן שירות גם כשאת ישנה, בחופשה או פשוט לא ליד הטלפון.</p>
                     </div>
                     <div class="num-badge order-1">04</div>
                 </div>
@@ -201,32 +227,32 @@
 
     <!-- ROI Section -->
     <section class="py-20 px-6 text-center text-white">
-        <div class="max-w-4xl mx-auto bg-slate-800/30 p-12 rounded-[40px] border border-white/5">
+        <div class="max-w-4xl mx-auto bg-slate-800/30 p-12 rounded-[40px] border border-white/5 text-white">
             <h2 class="text-3xl font-bold mb-6">החשבון הוא פשוט...</h2>
-            <p class="text-xl text-slate-300">
-                אם את עונה רק 30 דקות ביום על שאלות חוזרות, את שורפת <span class="text-purple-400 font-bold">180 שעות בשנה</span>.<br>
+            <p class="text-xl text-slate-300 text-white">
+                אם את עונה רק 30 דקות ביום על שאלות חוזרות, את שורפת <span class="text-purple-400 font-bold text-white">180 שעות בשנה</span>.<br>
                 תוך שבועיים מסיום הקורס, הבוט כבר מחזיר לעצמו את ההשקעה בזמן עבודה נטו שהוא חוסך לך.
             </p>
         </div>
     </section>
 
     <!-- Comparison Section -->
-    <section class="py-24 px-6 bg-slate-950/50">
-        <div class="max-w-4xl mx-auto text-right text-white">
-            <h2 class="text-3xl font-bold text-center mb-16">למה לבנות לבד ולא להזמין בחוץ?</h2>
+    <section class="py-24 px-6 bg-slate-950/50 text-white">
+        <div class="max-w-4xl mx-auto text-right text-white text-white text-white">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white text-white">למה לבנות לבד ולא להזמין בחוץ?</h2>
             <div class="grid md:grid-cols-2 gap-12">
-                <div class="p-10 rounded-3xl bg-slate-800/20 border border-white/5">
+                <div class="p-10 rounded-3xl bg-slate-800/20 border border-white/5 text-white">
                     <h4 class="text-xl font-bold mb-6 text-slate-500 italic">אצל גורם חיצוני</h4>
-                    <ul class="space-y-4 text-slate-400 text-lg">
+                    <ul class="space-y-4 text-slate-400">
                         <li>• עלות שמתחילה ב-2,000 ₪ ומטפסת מהר</li>
                         <li>• את תלויה באיש המקצוע לכל שינוי קטן</li>
                         <li>• הבוט נבנה בסטנדרט כללי, לא בשפה שלך</li>
                     </ul>
                 </div>
                 <div class="p-10 rounded-3xl brand-gradient shadow-2xl relative overflow-hidden font-bold">
-                    <h4 class="text-xl mb-6">בקורס של AutonoMe</h4>
-                    <ul class="space-y-4 text-lg">
-                        <li>• השקעה של 1,200 ₪ בלבד וזה שלך לתמיד</li>
+                    <h4 class="text-xl mb-6 text-white">בקורס של AutonoMe</h4>
+                    <ul class="space-y-4">
+                        <li>• השקעה של 1,197 ₪ בלבד וזה שלך לתמיד</li>
                         <li>• את לומדת לשלוט במערכת בעצמך (חופש!)</li>
                         <li>• הבוט נבנה יחד איתך, בדיוק בקול ובשפה שלך</li>
                     </ul>
@@ -236,9 +262,9 @@
     </section>
 
     <!-- About Section - הדסה -->
-    <section class="py-24 px-6 text-white text-white">
+    <section id="about" class="py-24 px-6 text-white">
         <div class="max-w-4xl mx-auto text-center text-white">
-            <div class="inline-block p-1 brand-gradient rounded-full mb-8 text-white">
+            <div class="inline-block p-1 brand-gradient rounded-full mb-8">
                 <div class="bg-slate-900 rounded-full px-8 py-2">
                     <span class="text-xl font-bold">נעים מאוד, שמי הדסה</span>
                 </div>
@@ -256,12 +282,12 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-24 bg-slate-950 px-6 text-white">
+    <section id="faq" class="py-24 bg-slate-950 px-6 text-white">
         <div class="max-w-4xl mx-auto text-white">
-            <h2 class="text-3xl font-bold text-center mb-16 text-white">כמה דברים שחשוב שתדעי</h2>
-            <div class="space-y-4 text-white">
-                <details class="group glass-card overflow-hidden">
-                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none text-white">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white text-white">כמה דברים שחשוב שתדעי</h2>
+            <div class="space-y-4">
+                <details class="group glass-card overflow-hidden text-white">
+                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none">
                         "אני לא טיפוס טכנולוגי בכלל..."
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -269,8 +295,8 @@
                         בדיוק בגלל זה הקורס הוא ביצועי. אנחנו לא לומדות תיאוריה, אנחנו פשוט בונות. אם את יודעת להשתמש בווצאפ – את תצאי מפה עם בוט. אני מפרקת כל שלב לרמה הפשוטה ביותר.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
-                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none text-white">
+                <details class="group glass-card overflow-hidden text-white">
+                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none">
                         "אני שונאת לדבר עם בוטים, למה שהלקוחות שלי יאהבו?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -279,7 +305,7 @@
                     </div>
                 </details>
                 <details class="group glass-card overflow-hidden text-white text-white">
-                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none text-white">
+                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none">
                         "אין לי גישה לפייסבוק וזה נשמע לי מסובך"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -288,7 +314,7 @@
                     </div>
                 </details>
                 <details class="group glass-card overflow-hidden text-white">
-                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none text-white">
+                    <summary class="p-6 cursor-pointer font-bold text-xl flex justify-between items-center list-none">
                         "על איזו תשתית טכנולוגית אנחנו בונות?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -310,7 +336,7 @@
                         "אני מפחדת שיחסמו אותי בווצאפ..."
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
-                    <div class="p-6 pt-0 text-slate-400 text-lg">
+                    <div class="p-6 pt-0 text-slate-400 text-lg text-white">
                         בקורס אנחנו לומדות לעבוד עם המערכת הרשמית של מטא, מה שמבטיח עבודה בטוחה. אנחנו נלמד את הכללים הנכונים כדי לשמור על החשבון שלך ולוודא שהבוט עובד לפי התקנות הכי עדכניות.
                     </div>
                 </details>
@@ -319,7 +345,7 @@
                         "איך אדע אם זה יעבוד לי?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
-                    <div class="p-6 pt-0 text-slate-400 text-lg">
+                    <div class="p-6 pt-0 text-slate-400 text-lg text-white">
                         הקורס הוא תהליך פרקטי. את לא מקבלת רק ידע, את עוברת איתי שלב אחרי שלב ובסיום 6 השעות יש לך בוט שעובד ומחובר לעסק שלך.
                     </div>
                 </details>
@@ -328,24 +354,28 @@
     </section>
 
     <!-- Final Price Box -->
-    <section id="register" class="py-32 px-6 relative overflow-hidden text-white">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
+    <section id="register" class="py-32 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10 text-white">
             <h2 class="text-5xl font-black mb-12 text-white">הבוט הראשון שלך מתחיל כאן.</h2>
             <div class="glass-card p-12 border-2 border-purple-500/50 relative shadow-2xl">
                 <div class="absolute -top-6 left-1/2 -translate-x-1/2 brand-gradient px-8 py-2 rounded-full font-bold text-sm tracking-widest uppercase text-white shadow-lg">מחיר מיוחד לרגל ההשקה</div>
-                <div class="flex flex-col md:flex-row items-center justify-around gap-12">
+                <div class="flex flex-col md:flex-row items-center justify-around gap-12 text-white">
                     <div class="text-right">
                         <h4 class="text-2xl font-bold mb-6 text-purple-300">מה את מקבלת?</h4>
                         <ul class="space-y-4 text-slate-300 text-lg">
                             <li class="flex items-center gap-2 text-white">✔ בוט עובד ומחובר לעסק שלך</li>
                             <li class="flex items-center gap-2 text-white">✔ הקלטות המפגשים ל-3 חודשים</li>
-                            <li class="flex items-center gap-2">✔ ליווי אישי בווצאפ לכל שאלה</li>
+                            <li class="flex items-center gap-2 text-white">✔ ליווי אישי בווצאפ לכל שאלה</li>
                             <li class="flex items-center gap-2 text-white">✔ עצמאות טכנולוגית מלאה</li>
                         </ul>
+                        <p class="mt-6 text-sm text-blue-300 italic">
+                            צריכה מועד אחר? 
+                            <a href="https://wa.me/972503667899?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%9E%D7%95%D7%A2%D7%93%20%D7%A9%D7%9C%20%D7%99%D7%95%D7%9D%20%D7%A8%D7%91%D7%99%D7%A2%D7%99%20%D7%A4%D7%97%D7%95%D7%AA%20%D7%9E%D7%A1%D7%AA%D7%93%D7%A8%20%D7%9C%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%93%D7%91%D7%A8%20%D7%A2%D7%9C%20%D7%9E%D7%95%D7%A2%D7%93%20%D7%90%D7%97%D7%A8." class="underline font-bold hover:text-white transition" target="_blank">כתבו לי בוואטסאפ לתיאום מועד</a>.
+                        </p>
                     </div>
                     <div class="text-center md:border-r border-white/10 md:pr-12 text-white">
-                        <div class="text-2xl text-slate-500 line-through mb-1">₪1,700</div>
-                        <div class="text-7xl font-black text-white">₪1,200</div>
+                        <div class="text-2xl text-slate-500 line-through mb-1 text-white">₪1,549</div>
+                        <div class="text-7xl font-black text-white">₪1,197</div>
                         <p class="text-purple-400 font-bold text-xl">השקעה שתחסוך לך זמן וכסף</p>
                     </div>
                 </div>
@@ -360,7 +390,7 @@
     <footer class="py-12 border-t border-white/5 text-center text-slate-500">
         <div class="flex flex-col items-center justify-center gap-4 mb-4">
             <div class="logo-box">
-<img src="logo.png" alt="לוגו AutonoMe" class="h-12 w-auto opacity-50 grayscale hover:grayscale-0 transition duration-300">
+                <img src="logo.png" alt="לוגו AutonoMe" class="h-12 w-auto opacity-50 grayscale hover:grayscale-0 transition duration-300">
             </div>
         </div>
         <p>© 2025 כל הזכויות שמורות לאוטונומי - אוטומציות ובוטים שעובדים בשבילך</p>
