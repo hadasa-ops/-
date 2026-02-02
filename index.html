@@ -44,7 +44,6 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             background: rgba(255, 255, 255, 0.05);
         }
-        /* פתרון ללוגו כהה - קפסולה בהירה */
         .logo-box {
             background: rgba(255, 255, 255, 0.95);
             padding: 8px 16px;
@@ -118,6 +117,7 @@
                 </div>
                 <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                     <a href="#logic" class="hover:text-white transition">איך זה עובד?</a>
+                    <a href="#who-is-it-for" class="hover:text-white transition">למי זה מתאים?</a>
                     <a href="#newbie" class="hover:text-white transition text-purple-300 font-bold">חדשה בעולם הבוטים?</a>
                     <a href="#about" class="hover:text-white transition">מי אני?</a>
                     <a href="#faq" class="hover:text-white transition">שאלות ותשובות</a>
@@ -152,27 +152,86 @@
     </section>
 
     <!-- The Pain Points -->
-    <section id="logic" class="py-24 bg-slate-900/40 border-y border-white/5 px-6">
+    <section id="logic" class="py-24 px-6 border-b border-white/5">
         <div class="max-w-6xl mx-auto text-white">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">למה להמשיך לחכות לאחרים?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">למה להמשיך לחכות לאחרים?</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="glass-card p-10">
                     <div class="text-purple-400 text-5xl mb-6 text-right">💰</div>
                     <h3 class="text-3xl font-bold mb-4 text-white">חוסכת אלפי שקלים</h3>
                     <p class="text-slate-100 leading-relaxed text-xl font-medium">במקום לשלם 2,500-5,000 ש"ח למפתח חיצוני, את חוסכת את הכסף הגדול ויוצאת עם אותו מוצר בדיוק.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="glass-card p-10 border-purple-500/20 shadow-purple-500/5 shadow-2xl">
                     <div class="text-blue-400 text-5xl mb-6 text-right">🔑</div>
                     <h3 class="text-3xl font-bold mb-4 text-white">עצמאות מלאה</h3>
                     <p class="text-slate-100 leading-relaxed text-xl font-medium">רוצה לשנות מילה? להוסיף כפתור? לשנות מחיר? את לא צריכה לחכות שבועות למתכנתת או לשלם על כל שינוי קטן.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="glass-card p-10">
                     <div class="text-purple-400 text-5xl mb-6 text-right">📈</div>
                     <h3 class="text-3xl font-bold mb-4 text-white">נכס לעסק שלך</h3>
                     <p class="text-slate-100 leading-relaxed text-xl font-medium">את לומדת את השיטה. מהיום והלאה, תוכלי להקים לעצמך (או לאחרים בתשלום) כמה בוטים שרק תרצי ללא עלות נוספת.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: הקורס הזה בשבילך אם -->
+    <section id="who-is-it-for" class="py-16 px-6 bg-slate-900/40 border-b border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-12 text-white">הקורס הזה בשבילך אם...</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Exactly for you -->
+                <div class="p-8 rounded-[32px] bg-emerald-500/5 border border-emerald-500/10 text-right shadow-xl">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center gap-2">
+                        <span class="text-3xl">✓</span> זה בדיוק בשבילך
+                    </h3>
+                    <ul class="space-y-4 text-lg text-slate-200">
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">✓</span>
+                            <span>יש לך עסק ואת נותנת מענה בווצאפ</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">✓</span>
+                            <span>את מבלה שעות ביום בלענות על אותן שאלות</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">✓</span>
+                            <span>את רוצה לגדול בלי להוסיף עוד שעות עבודה</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">✓</span>
+                            <span>את יודעת להשתמש בווטסאפ ובמחשב - זה מספיק</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">✓</span>
+                            <span>את מוכנה להשקיע 6 שעות כדי לחסוך מאות</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Not for you -->
+                <div class="p-8 rounded-[32px] bg-red-500/5 border border-red-500/10 text-right shadow-xl">
+                    <h3 class="text-2xl font-bold text-red-400 mb-6 flex items-center gap-2">
+                        <span class="text-3xl">✗</span> זה לא בשבילך
+                    </h3>
+                    <ul class="space-y-4 text-lg text-slate-200">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✗</span>
+                            <span>את מחפשת פתרון קסם בלי לעשות כלום</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✗</span>
+                            <span>אין לך זמן להשתתף ב-2 מפגשים</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✗</span>
+                            <span>את לא מוכנה להשקיע 30$ לחודש במערכת</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">✗</span>
+                            <span>את צריכה מערכת מורכבת עם אינטגרציות מתקדמות</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -206,36 +265,36 @@
         </div>
     </section>
 
-    <!-- Practicality Section -->
+    <!-- Product Logic Section -->
     <section class="py-24 px-6 bg-slate-900/20 text-white">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto text-white">
             <h2 class="text-4xl md:text-5xl font-black text-center mb-20 leading-tight">לא רק ידע.<br><span class="text-purple-400">מוצר עובד ביד.</span></h2>
-            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12 text-white">
                 <div class="flex items-start gap-6 text-right">
-                    <div class="order-2">
-                        <h4 class="text-3xl font-bold mb-2 text-white">תוך 6 שעות הבוט שלך באוויר</h4>
+                    <div class="order-2 text-white">
+                        <h4 class="text-3xl font-bold mb-2">תוך 6 שעות הבוט שלך באוויר</h4>
                         <p class="text-slate-100 leading-relaxed text-xl">אנחנו לא רק לומדות - אנחנו עושות. את בונה את הבוט יחד איתי שלב אחרי שלב, עד שהוא מחובר ועובד.</p>
                     </div>
                     <div class="num-badge order-1">01</div>
                 </div>
                 <div class="flex items-start gap-6 text-right">
-                    <div class="order-2">
-                        <h4 class="text-3xl font-bold mb-2 text-white">תשתית מקצועית (Manychat)</h4>
-                        <p class="text-slate-100 leading-relaxed text-xl">את בונה על גבי המערכת הרשמית והמתקדמת ביותר בעולם, בסטנדרת של המותגים הגדולים ביותר.</p>
+                    <div class="order-2 text-white">
+                        <h4 class="text-3xl font-bold mb-2 text-white">עצמאות מלאה</h4>
+                        <p class="text-slate-100 leading-relaxed text-xl">את לא תלויה באף אחד. רוצה לשנות משפט? להוסיף כפתור? את יודעת בדיוק איך לעשות את זה לבד.</p>
                     </div>
                     <div class="num-badge order-1">02</div>
                 </div>
                 <div class="flex items-start gap-6 text-right">
                     <div class="order-2">
-                        <h4 class="text-3xl font-bold mb-2 text-white">שפה מותאמת אישית</h4>
-                        <p class="text-slate-100 leading-relaxed text-xl">הבוט יישמע בדיוק כמוך, ידבר בשפה של המותג שלך וייתן ללקוחות חוויה אישית ומדויקת.</p>
+                        <h4 class="text-3xl font-bold mb-2 text-white">חיסכון אדיר בזמן</h4>
+                        <p class="text-slate-100 leading-relaxed text-xl">הבוט מסנן עבורך את השאלות הגנריות ומשאיר לך זמן להתמקד בעבודה האמיתית ובמה שחשוב.</p>
                     </div>
                     <div class="num-badge order-1">03</div>
                 </div>
                 <div class="flex items-start gap-6 text-right">
                     <div class="order-2">
-                        <h4 class="text-3xl font-bold mb-2 text-white">מענה 24/6 אוטומטי</h4>
-                        <p class="text-slate-100 leading-relaxed text-xl">העסק שלך נותן שירות, עונה על שאלות וסוגר לידים גם כשאת ישנה או בזמן איכות עם המשפחה.</p>
+                        <h4 class="text-3xl font-bold mb-2 text-white">מענה 24/6</h4>
+                        <p class="text-slate-100 leading-relaxed text-xl">העסק שלך נותן שירות גם כשאת ישנה, בחופשה או פשוט לא ליד הטלפון.</p>
                     </div>
                     <div class="num-badge order-1">04</div>
                 </div>
@@ -245,7 +304,7 @@
 
     <!-- About Section -->
     <section id="about" class="py-24 px-6 text-white">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-4xl mx-auto text-center text-white">
             <div class="inline-block p-1 brand-gradient rounded-full mb-8">
                 <div class="bg-slate-900 rounded-full px-8 py-2">
                     <span class="text-2xl font-bold text-white">נעים מאוד, שמי הדסה</span>
@@ -277,16 +336,16 @@
                         בדיוק בגלל זה הקורס הוא ביצועי. אנחנו לא לומדות תיאוריה, אנחנו פשוט בונות. אם את יודעת להשתמש בווצאפ – את תצאי מפה עם בוט. אני מפרקת כל שלב לרמה הפשוטה ביותר.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
+                <details class="group glass-card overflow-hidden text-white">
                     <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
                         "אני שונאת לדבר עם בוטים, למה שהלקוחות שלי יאהבו?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
-                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed">
+                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed text-white">
                         אנחנו לא בונות בוט מעצבן של שירות לקוחות גדול. אנחנו בונות עוזרת אישית שנותנת מענה מיידי. הלקוחה שלך תעריך את זה שהיא קיבלה תשובה באותו הרגע ולא הייתה צריכה לחכות שעות שתתפני.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
+                <details class="group glass-card overflow-hidden text-white">
                     <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
                         "אין לי גישה לפייסבוק וזה נשמע לי מסובך"
                         <span class="transition-transform group-open:rotate-180">↓</span>
@@ -295,17 +354,17 @@
                         חשוב לדעת: החיבור לפייסבוק נדרש **רק להגדרה הראשונית** של המערכת (משימה של 5 דקות). ברגע שהחיבור בוצע, אין שום צורך לנהל את הפייסבוק או להיכנס אליו. ואם גם השלב הזה מרתיע? אני מציעה שירות הגדרה וחיבור בתשלום סמלי כדי שתתרכזי נטו בבניית הבוט.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
-                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
+                <details class="group glass-card overflow-hidden text-white">
+                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none text-white">
                         "על איזו תשתית טכנולוגית אנחנו בונות?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
-                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed">
+                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed text-white">
                         העבודה מתבצעת על גבי מערכת Manychat. מדובר בהשקעה חודשית של כ-30$, שמעניקה לך "עובדת דיגיטלית" שעובדת עבורך 24/6. על חשבון אחד תוכלי להקים כמה בוטים שתרצי ללא עלות נוספת.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
-                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
+                <details class="group glass-card overflow-hidden text-white">
+                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none text-white">
                         "אני משתמשת באינטרנט מסונן (נטפרי), זה יעבוד?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -314,16 +373,16 @@
                     </div>
                 </details>
                 <details class="group glass-card overflow-hidden">
-                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
+                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none text-white">
                         "אני מפחדת שיחסמו אותי בווצאפ..."
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
-                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed">
+                    <div class="p-8 pt-0 text-slate-200 text-xl leading-relaxed text-white">
                         בקורס אנחנו לומדות לעבוד עם המערכת הרשמית של מטא, מה שמבטיח עבודה בטוחה. אנחנו נלמד את הכללים הנכונים כדי לשמור על החשבון שלך ולוודא שהבוט עובד לפי התקנות הכי עדכניות.
                     </div>
                 </details>
-                <details class="group glass-card overflow-hidden">
-                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none">
+                <details class="group glass-card overflow-hidden text-white">
+                    <summary class="p-8 cursor-pointer font-bold text-2xl flex justify-between items-center list-none text-white text-white">
                         "איך אדע אם זה יעבוד לי?"
                         <span class="transition-transform group-open:rotate-180">↓</span>
                     </summary>
@@ -341,21 +400,22 @@
             <h2 class="text-4xl font-bold mb-8 text-white">חדשה בעולם הבוטים?</h2>
             <p class="text-2xl text-slate-300 mb-12">הנה רק חלק ממה שהבוט שתבני יוכל לעשות עבורך:</p>
             <div class="grid sm:grid-cols-2 gap-6 text-right">
-                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 text-white">
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 text-white text-white">
                     <p class="font-bold text-2xl text-purple-300 mb-2">מענה אוטומטי לשאלות נפוצות</p>
-                    <p class="text-xl text-slate-100 leading-relaxed">מחירים, שעות פעילות, מיקום ופרטי משלוח - הכל נענה מיד ללא התערבותך.</p>
+                    <p class="text-xl text-slate-100 leading-relaxed text-white">מחירים, שעות פעילות, מיקום ופרטי משלוח - הכל נענה מיד ללא התערבותך.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white/5 border border-white/10">
-                    <p class="font-bold text-2xl text-purple-300 mb-2">ניהול קמפיינים ולידים</p>
-                    <p class="text-xl text-slate-100 leading-relaxed">איסוף פרטי לקוחות מקמפיינים, שליחת קישורים לרישום וסינון לידים לא רלוונטיים.</p>
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 text-white">
+                    <!-- Adjusted per user request -->
+                    <p class="font-bold text-2xl text-purple-300 mb-2">ניהול לידים</p>
+                    <p class="text-xl text-slate-100 leading-relaxed">שליחת קישורים לרישום וסינון לידים לא רלוונטיים.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white/5 border border-white/10">
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 text-white">
                     <p class="font-bold text-2xl text-purple-300 mb-2">סגירת פגישות והזמנות</p>
                     <p class="text-xl text-slate-100 leading-relaxed">קישור ליומן, שליחת טפסי הזמנה וגביית תשלום ראשוני - הכל בתוך הווצאפ.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white/5 border border-white/10">
+                <div class="p-8 rounded-2xl bg-white/5 border border-white/10 text-white">
                     <p class="font-bold text-2xl text-purple-300 mb-2">שירות לקוחות פרימיום</p>
-                    <p class="text-xl text-slate-100 leading-relaxed">הלקוחות שלך מקבלים יחס VIP ומענה מהיר, מה שמעלה את רמת המקצוענות של המותג.</p>
+                    <p class="text-xl text-slate-100 leading-relaxed text-white">הלקוחות שלך מקבלים יחס VIP ומענה מהיר, מה שמעלה את רמת המקצוענות של המותג.</p>
                 </div>
             </div>
         </div>
@@ -365,34 +425,34 @@
     <section id="register" class="py-32 px-6 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10 text-white">
             <h2 class="text-5xl font-black mb-12">הבוט הראשון שלך מתחיל כאן.</h2>
-            <div class="glass-card p-12 border-2 border-purple-500/50 relative shadow-2xl">
-                <div class="absolute -top-6 left-1/2 -translate-x-1/2 brand-gradient px-8 py-2 rounded-full font-bold text-sm tracking-widest uppercase text-white shadow-lg">מחיר מיוחד לרגל ההשקה</div>
+            <div class="glass-card p-12 border-2 border-purple-500/50 relative shadow-2xl text-white">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 brand-gradient px-8 py-2 rounded-full font-bold text-sm tracking-widest uppercase text-white shadow-lg text-white">מחיר מיוחד לרגל ההשקה</div>
                 
                 <div class="flex flex-col md:flex-row items-center justify-around gap-12 text-white">
-                    <div class="text-right">
+                    <div class="text-right text-white">
                         <h4 class="text-3xl font-bold mb-6 text-purple-300">מה את מקבלת?</h4>
                         <ul class="space-y-4 text-slate-100 text-xl text-right font-medium">
-                            <li class="flex items-center gap-2">✔ בוט עובד ומחובר לעסק שלך</li>
-                            <li class="flex items-center gap-2">✔ הקלטות המפגשים ל-3 חודשים</li>
-                            <li class="flex items-center gap-2">✔ עצמאות טכנולוגית מלאה</li>
-                            <li class="flex items-center gap-2 text-blue-300">✔ ליווי אישי צמוד בווצאפ עד שהבוט עובד!</li>
+                            <li class="flex items-start gap-2">✔ בוט עובד ומחובר לעסק שלך</li>
+                            <li class="flex items-start gap-2">✔ הקלטות המפגשים ל-3 חודשים</li>
+                            <li class="flex items-start gap-2">✔ עצמאות טכנולוגית מלאה</li>
+                            <li class="flex items-start gap-2 text-blue-300 font-bold">✔ ליווי אישי צמוד בווצאפ עד שהבוט עובד!</li>
                         </ul>
                     </div>
                     
                     <div class="text-center md:border-r border-white/10 md:pr-12 text-white">
                         <div class="text-2xl text-slate-400 line-through mb-4 opacity-60">מחיר רגיל: ₪1,549</div>
-                        <div class="text-3xl font-bold text-white mb-2">רק 3 תשלומים של</div>
+                        <div class="text-3xl font-bold text-white mb-2 text-white">רק 3 תשלומים של</div>
                         <div class="text-8xl font-black text-white">₪399</div>
-                        <div class="text-xl text-slate-300 mt-4 font-bold">(₪1,197 סה"כ)</div>
+                        <div class="text-xl text-slate-300 mt-4 font-bold text-white">(₪1,197 סה"כ)</div>
                     </div>
                 </div>
 
-                <div class="mt-12 p-6 bg-red-500/10 border border-red-500/30 rounded-2xl text-center">
+                <div class="mt-12 p-6 bg-red-500/10 border border-red-500/30 rounded-2xl text-center text-white">
                     <p class="text-xl font-bold text-red-300 uppercase tracking-widest">מספר המקומות מוגבל!</p>
                     <p class="text-slate-200 mt-2">כדי להבטיח יחס אישי, ליווי צמוד ומענה מיטבי לכל אחת עד לחיבור הבוט.</p>
                 </div>
 
-                <a href="https://pay.sumit.co.il/egfwym/o8od5a/oap6h5/payment/" target="_blank" class="block mt-12 w-full brand-gradient py-8 rounded-2xl text-4xl font-black hover:scale-[1.02] transition shadow-2xl tracking-tight">
+                <a href="https://pay.sumit.co.il/egfwym/o8od5a/oap6h5/payment/" target="_blank" class="block mt-12 w-full brand-gradient py-8 rounded-2xl text-4xl font-black hover:scale-[1.02] transition shadow-2xl tracking-tight text-white">
                     אני בונה את הבוט שלי
                 </a>
                 
@@ -404,8 +464,35 @@
         </div>
     </section>
 
+    <!-- NEW SECTION: Future Pacing (عוד חודש מהיום) -->
+    <section class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-16 text-white">עוד חודש מהיום, איפה תהיי?</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-white">
+                <!-- Joined -->
+                <div class="p-10 rounded-[40px] bg-emerald-500/5 border border-emerald-500/20 text-right">
+                    <p class="text-emerald-400 font-bold text-2xl mb-4">אם תצטרפי היום:</p>
+                    <p class="text-xl text-slate-200 leading-relaxed">
+                        עוד חודש הבוט שלך כבר עונה על שאלות, אוסף לידים ושולח תזכורות. ואת? פנויה לעשות מה שאת אוהבת, בזמן שהעסק ממשיך לעבוד.
+                    </p>
+                </div>
+                <!-- Did nothing -->
+                <div class="p-10 rounded-[40px] bg-red-500/5 border border-red-500/20 text-right text-white">
+                    <p class="text-red-400 font-bold text-2xl mb-4">אם לא תעשי כלום:</p>
+                    <p class="text-xl text-slate-200 leading-relaxed text-white">
+                        עוד חודש של 07:00 בבוקר עם 30 הודעות שלא נענו. עוד חודש של "רגע, אני באמצע משהו". עוד חודש שהעסק רץ - ואת רצה אחריו.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <a href="#register" class="bg-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl text-2xl font-bold transition-all inline-block border border-white/10">בואי נשנה את התמונה - אני בונה את הבוט שלי</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/5 text-center text-slate-500 text-white">
+    <footer class="py-12 border-t border-white/5 text-center text-slate-500">
         <div class="flex flex-col items-center justify-center gap-4 mb-4 text-white">
             <div class="logo-box">
                 <img src="logo.png" alt="לוגו AutonoMe" class="h-12 w-auto opacity-50 grayscale hover:grayscale-0 transition duration-300">
